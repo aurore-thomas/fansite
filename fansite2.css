@@ -1,0 +1,819 @@
+/* ------------------------------------------ */
+/*                      POLICES               */
+/* ------------------------------------------ */
+
+@font-face {
+    font-family: 'Extros';
+    src: url(../fansite/font/Extros\ Backstage.ttf);
+    format: ttf;
+}
+
+@font-face {
+    font-family: 'Gravity';
+    src: url(../fansite/font/Gravity-Light.otf);
+    format: otf;
+}
+
+@font-face {
+    font-family: 'Potra';
+    src: url(../fansite/font/Potra.ttf);
+    format: ttf;
+}
+
+
+/* -------------------------------------- */
+/*              HEADER ET FOOTER          */
+/* -------------------------------------- */
+
+body {
+    margin : 0 25px 0 25px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 120px;
+}
+
+.NomSite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 120px;
+    margin-left: 40px;
+}
+
+.NomSite img{
+    height: 90px;
+}
+
+.titrePluto {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    margin-left: 25px;
+    font-family: Potra;
+    font-size: 3.5em;
+    color: #47403B;
+    text-align: right;
+    text-decoration: none;
+}
+
+.titrePluto a {
+    font-family: Potra;
+    font-size: 1.2em;
+    color: #47403B;
+    text-align: right;
+    text-decoration: none;
+}
+
+.menu {
+    position: fixed;
+    height: 180px;
+    padding-top: 60px;
+}
+
+#hamburger {
+    display: none;
+}
+  
+#hamburger-logo {
+    cursor: pointer;
+    width: 50px;
+    font-size: 1.7em;
+    display: block;
+    color: #47403B;
+    transform: translateX(1200px);
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+  
+nav {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 235px;
+    margin-top: 0px;
+    transform: translateX(1400px);
+    border-radius: 15px;
+    box-shadow: 0px 0px 1px 1px #47403B;
+}
+  
+#hamburger-logo, nav {
+    transition: 0.7s;
+}
+
+#hamburger:checked ~ nav {
+    transform: translateX(1060px);
+}
+  
+nav a {
+    background-color: #8B827D;
+    color: #F6F5F1;
+    text-decoration: none;
+    font-family: 'Gravity';
+    padding: 10px 10px 10px 30px;
+}
+  
+nav a:hover {
+    background: #47403B;
+    color: #9D8F9C;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    height: 160px;
+    margin-bottom: 40px;
+}
+
+.ListeMenu {
+   margin: 20px 40px 30px 40px;
+   text-align: center;
+}
+
+.ListeMenu a{
+   font-family: Gravity;
+   text-decoration: none;
+   color:#47403B;
+   line-height: 30px;
+}
+
+.ListeMenu a:hover {
+   color: #E1B1A3;
+   cursor: pointer;
+}
+
+/* ------------------------------------- */
+/*              ACCUEIL                  */
+/* ------------------------------------- */
+
+.citation {
+    background-color: #8B827D;
+    height: 100px;
+    padding : 10px 100px 10px 100px;
+}
+
+.citation p {
+    font-family: Gravity;
+    text-align: center;
+}
+
+.accueil1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 40px;
+    padding: 10px 0px 10px 0px;
+    background-color: #47403B;
+}
+
+.AcLeft {
+    display: flex;
+    flex-direction: row;
+    background-color: #BEBAB3;
+    width: 800px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 0% 150px 150px 0%;
+    transition: 0.9s;
+    cursor: url(pictures/Logo_fusee_pour_curseur.png), auto;
+}
+
+.AcLeft:hover {
+    transform: translateY(20px);
+    box-shadow: 0px 0px 2px 2px #47403B;
+}
+
+.Left1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin : 20px 30px 20px 100px;
+}
+
+.LeftTexte {
+    display: flex;
+    align-items: center;
+    font-family: Gravity;
+    color: #F6F5F1;
+    height : 200px;
+    width: 400px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.Left1 img{
+    height: 150px;
+    margin-left: 100px;
+}
+
+
+.AcRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-color: #BEBAB3;
+    width: 900px;
+    margin: 50px 0px 0px 401px;
+    border-radius: 150px 0px 0px 150px;
+    transition: 0.9s;
+    cursor: url(pictures/Logo_fusee_pour_curseur.png), auto;
+}
+
+.AcRight:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 0px 2px 2px #47403B;
+}
+
+.Right1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin : 20px 100px 20px 30px;
+}
+
+.RightTexte {
+    display: flex;
+    align-items: center;
+    font-family: Gravity;
+    color: #F6F5F1;
+    margin-left: 200px;
+    height: 200px;
+    width: 400px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.Right1 img{
+    height: 150px;
+}
+
+
+
+/* ------------------------------------ */
+/*              HISTOIRE                */
+/* ------------------------------------ */
+
+
+
+.histoire {
+    background-color: #F6F5F1;
+    padding-top: 20px;
+}
+
+.h-introduction {
+    background-color: #F6F5F1;
+    margin-top: 25px;
+    padding-top: 25px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.h-introduction img {
+    height: 350px;
+    box-shadow: -10px 10px 4px 4px #47403B;
+}
+
+.h-introduction-texte {
+    font-family: Gravity;
+    color:#47403B;
+    width: 600px;
+    text-align: justify;
+}
+
+.h-lowell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.h-lowell-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    padding : 20px 55px 20px 55px;
+    width: 1050px;
+    background-color: #8B827D;
+    text-align: justify;
+}
+
+.histoire h1{
+    font-family: Potra;
+    font-size: 2em;
+    color: #F6F5F1;
+}
+
+.histoire p{
+    font-family: Gravity;
+    color: #F6F5F1;
+}
+
+.h-lowell-description-texte img{
+    margin-left: 380px;
+    height: 130px;
+}
+
+.h-lowell button{
+    background-color: #8B827D;
+    border: 1px solid #47403B;
+    font-family: Potra;
+    font-size:1.3em;
+    color: #47403B;
+    width: 400px;
+    transition: 2s;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.h-lowell button:hover{
+    letter-spacing: 0.5em;
+    background-color: #47403B;
+    color: #F6F5F1;
+    width: 500px;
+    box-shadow: 5px 3px 3px #F6F5F1;
+}
+
+.h-lowell-images {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.h-lowell-image-1 {
+    margin-left: -100px;
+    width: 500px;
+    box-shadow: -10px 10px 4px 4px #47403B;
+}
+
+.h-lowell-image-2 {
+    margin-left: 60px;
+    width: 350px;
+    box-shadow: -10px 10px 4px 4px #47403B;
+}
+
+.h-clyde {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 80px;
+}
+
+.h-clyde-texte {
+    margin-right: 40px;
+    background-color: #47403B;
+    width: 60%;
+    padding : 20px 55px 20px 55px;
+}
+
+.h-clyde img{
+    width: 25%;
+    box-shadow: -10px 10px 4px 4px #47403B;
+}
+
+.h-venetia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+
+.h-venetia img{
+    width: 20%;
+    box-shadow: -10px 10px 4px 4px #47403B;
+    margin-right: 8%;
+}
+
+.h-venetia-texte {
+    margin-right: 40px;
+    background-color: #8B827D;
+    width: 45%;
+    padding : 20px 55px 20px 55px;
+}
+
+/* ---------------------------------------------------------- */
+/*  La partie n'a pas été réalisé par moi, il s'agit d'un modèle
+                        trouvé sur Internet.                     */
+
+.slider {
+    width: 800px;
+    margin: 30px auto;
+    position: relative;
+  }
+
+  .slider-viewport {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .slider-content {
+    display: grid;
+    grid-auto-flow: column;
+    -webkit-transition: 2s all;
+    transition: 2s all;
+  }
+
+  .slider-content img {
+    background-color: white;
+    width: 800px;
+    height: 400px;
+  }
+
+  .slider-nav {
+    position: absolute;
+    width: 100%;
+    bottom: -30px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .slider-nav a {
+    display: inline-block;
+    background-color: #E1B1A3;
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+  }
+
+  .slider-nav a:hover {
+    background-color: #47403B;
+  }
+
+  #img2:target .slider-content {
+    -webkit-transform: translateX(-800px);
+            transform: translateX(-800px);
+  }
+
+  #img3:target .slider-content {
+    -webkit-transform: translateX(-1600px);
+            transform: translateX(-1600px);
+  }
+
+  #img4:target .slider-content {
+    -webkit-transform: translateX(-2400px);
+            transform: translateX(-2400px);
+  }
+
+  #img5:target .slider-content {
+    -webkit-transform: translateX(-3200px);
+            transform: translateX(-3200px);
+  }
+
+
+
+/* ---------------------------------------------- */
+/*                  NEW HORIZON                   */
+/* ---------------------------------------------- */
+
+.new-horizon {
+    background-color: #E1B1A3;
+    margin: 30px 0px 30px 0px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.nh-introduction {
+    width: 1000px;
+    margin-left: 10%;
+    
+}
+
+.nh-introduction h1 {
+    font-family: Potra, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #F6F5F1;
+    text-decoration: none;
+    text-align: center;
+}
+
+.new-horizon p {
+    font-family: Gravity;
+    color: #F6F5F1;
+    text-align: justify;
+}
+
+.nh-texte {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.nh-texte-texte {
+    width: 400px;
+    margin-right: 120px;
+    padding: 25px 30px 25px 30px;
+    background-color: #8B827D;
+    transition: 1s;
+}
+
+.nh-texte img {
+    width: 40%;
+    
+}
+
+.nh-video{
+    margin: 70px 90px 70px 90px;
+}
+
+.nh-texte button{
+    background-color: #8B827D;
+    border: 1px solid #47403B;
+    font-family: Potra;
+    font-size:1.3em;
+    color: #47403B;
+    width: 300px;
+    transition: 2s;
+    cursor: pointer;
+    margin: 30px 20px 40px 30px;
+}
+
+.nh-texte button:hover{
+    letter-spacing: 0.4em;
+    background-color: #47403B;
+    color: #F6F5F1;
+    width: 350px;
+    box-shadow: 5px 3px 3px #F6F5F1;
+}
+
+/* -------------------------------------- */
+/*              CONTACT                   */
+/* -------------------------------------- */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(pictures/fond-pluto.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin: 30px 0px 30px 0px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+} 
+
+.contact-titre {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color:#F6F5F1;
+    font-family: Potra;
+    text-align: center;
+    font-size: 2em;
+    line-height: 10px;
+    margin-bottom: 60px;
+    padding: 0px 25px 0px 25px;
+}
+
+.contact-formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-nom-prenom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input[type=nom-prenom], textarea {
+    width: 280px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+}
+
+input[type=texte], textarea {
+    width: 600px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+}
+  
+input[type=submit] {
+    background-color: #8B827D;
+    backdrop-filter: blur(3px);
+    color: #F6F5F1;
+    margin: 40px 100px 40px 100px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+::placeholder {
+    color: #F6F5F1;
+}
+  
+input[type=submit]:hover {
+    background-color: #47403B;
+    box-shadow: 0px 0px 4px 4px #F6F5F1;
+}
+
+/* --------------------------------------- */
+/*           GEOLOGIE ET SATELLITES        */
+/* --------------------------------------- */
+
+.geo-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #8B827D;
+    margin : 25px 50px 25px 50px;
+    padding: 20px 50px 20px 50px;
+    font-family: Gravity;
+    color:#F6F5F1;
+    text-align: center;
+}
+
+.geo-presentation button{
+    background-color: #8B827D;
+    border: 1px solid #47403B;
+    font-family: Potra;
+    font-size:1.3em;
+    color: #47403B;
+    width: 400px;
+    transition: 2s;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.geo-presentation button:hover{
+    letter-spacing: 0.5em;
+    background-color: #47403B;
+    color: #F6F5F1;
+    width: 500px;
+    box-shadow: 5px 3px 3px #F6F5F1;
+}
+
+.article-part1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin : 20px 0px 20px 0px;
+    padding: 30px 200px 30px 200px;
+    background-color: #47403B;
+    font-family: Gravity;
+    color:#F6F5F1;
+}
+
+.article-part2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.article-part2 img {
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.article-part2-colonnes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B827D;
+    width: 550px;
+    padding : 40px;
+    font-family: Gravity;
+    color:#F6F5F1;
+    text-align: justify;
+}
+
+.article-part2-colonnes figcaption {
+    width: 75%;
+}
+
+.article-part2-colonnes img{
+    margin-top: 20px;
+}
+
+.article-part3 {
+    background-color: #47403B;
+    display: flex;
+    flex-direction: column;
+    font-family: Gravity;
+    color:#F6F5F1;
+    margin-top: 40px;
+    padding : 40px;
+    text-align: justify;
+}
+
+.article-part3-figures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+.article-part3-figures img{
+    width: 350px;
+}
+
+.article-part3-figures-colonnes {
+    width: 350px;
+}
+
+.article-part4 {
+    display: flex;
+    flex-direction: row;
+    background-color: #8B827D;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 30px;
+    padding: 20px 40px;
+    font-family: Gravity;
+    color:#F6F5F1;
+}
+
+.article-part4-colonne {
+    margin: 0px 20px;
+    text-align: justify;
+    width: 400px;
+}
+
+.article-part4 img {
+    width: 400px;
+}
+
+.article-part5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #47403B;
+    padding: 30px 10px;
+    font-family: Gravity;
+    color:#F6F5F1;
+    text-align: justify;
+    margin : 30px 0px;
+}
+
+.article-part5-texte {
+    width: 70%;
+    padding: 0px 30px;
+}
+
+.article-part5-figure12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 0px 30px;
+    
+}
+
+.article-part5-figure12 img {
+    width: 70%;
+    margin: 20px 0px;
+}
+
+.article-part6 {
+    background-color: #8B827D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 50px;
+    font-family: Gravity;
+    color:#F6F5F1;
+    text-align: justify;
+}
+
+.article-part6 img {
+    width: 350px;
+}

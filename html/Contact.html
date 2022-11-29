@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../fansite2.css" type="text/css"/>
+</head>
+
+<body>
+    <header>
+        <div class="NomSite">
+            <img src="../pictures/Logo_de-Pluton.png"
+                alt="Logo de Pluton"/>
+            <div class="titrePluto">
+                <a href="../Accueil2.html" title="Lien vers la page d'accueil">PLUTON</a>
+            </div>
+        </div>
+        <div class="menu">
+            <input type="checkbox" id="hamburger">
+            <label id="hamburger-logo" for="hamburger">☰</label>
+            <nav>
+                <a href="History2.html" title="Lien vers l'histoire de Pluton">Découverte de Pluton</a>
+                <a href="NewHorizon.html" title="Lien vers l'histoire de la sonde New Horizons">New Horizons</a>
+                <a href="GeologieSatellites.html" title="Lien vers la page Géologie">Géologie</a>
+                <a href="#" title="Lien vers l'aspect Physique(période de révolution, rotation...) et les satellites de Pluton">Aspect Physique et Satellites</a>
+                <a href="#" title="Lien vers la page débat Planète ou Planète Naine ?">Planète ou Planète Naine ?</a>
+                <a href="Contact.html" title="Lien vers la page Contact et le formulaire">Contact</a>
+                </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="contact">
+            <div class="contact-titre">
+                 <p>Envie de communiquer ?</p>
+            </div>
+            <div class="contact-formulaire">
+                <!-- <form action="/action_page.php"> -->
+                <div class="contact-nom-prenom">
+                    <input type="nom-prenom" id="nom" 
+                            name="nom" 
+                            placeholder="Nom">
+                    <input type="nom-prenom" id="prenom"
+                            name="prenom"
+                            placeholder="Prénom"/>
+                </div>
+            
+                <input type="texte" id="planete" 
+                        name="planete" 
+                        placeholder="Votre planète préférée">
+            
+                <input type="texte" id="email-adresse"
+                        name="email" placeholder="Votre email ou nom de pigeon voyageur">
+            
+                <textarea id="subject" 
+                        name="subject" 
+                        placeholder="Votre message d'adoration pour Pluton (critiques non permises)" 
+                        style="height:200px"></textarea>
+            
+                <input type="submit" value="Envoyer">
+                </form>
+            </div>
+
+    </main>
+
+    <footer>
+        <div class="ListeMenu">
+            <ul style="list-style-type: none">
+            <li><a href="History2.html">Histoire</a></li>
+            <li><a href="NewHorizon.html">New Horizons</a></li>
+            <li><a href="GeologieSatellites.html">Géologie</a></li>
+            </ul>
+        </div>
+
+        <div class="ListeMenu">
+            <ul style="list-style-type: none">
+            <li><a href="#">Aspect Physique et Satellites</a></li>
+            <li><a href="#">Planète ou Planète Naine ?</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
